@@ -35,4 +35,5 @@ foreach ($svc in $services) {
     }
 }
 
-Write-Host "`nAll Hyper-V and Virtual Machine Platform features disabled. A restart may be required."
+Write-Host "`nAll Hyper-V and Virtual Machine Platform features disabled."
+Write-Host "A system restart is recommended for the changes to take effect." -ForegroundColor Yellow
