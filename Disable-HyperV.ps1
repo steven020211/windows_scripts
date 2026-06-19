@@ -1,5 +1,3 @@
-#Requires -RunAsAdministrator
-
 $features = @(
     "Microsoft-Hyper-V"
     "VirtualMachinePlatform"
