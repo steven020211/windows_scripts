@@ -3,6 +3,10 @@
 $scriptPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 $webhookUrl = $env:DISCORD_WEBHOOK_URL
 $apiKey = $env:OPENROUTER_API_KEY
+
+if ([string]::IsNullOrEmpty($webhookUrl)) { Write-Host "錯誤：未設定 DISCORD_WEBHOOK_URL" -ForegroundColor Red; exit 1 }
+if ([string]::IsNullOrEmpty($apiKey)) { Write-Host "錯誤：未設定 OPENROUTER_API_KEY" -ForegroundColor Red; exit 1 }
+
 $dateStr = Get-Date -Format "yyyy/MM/dd"
 
 Add-Type -AssemblyName System.Web.Extensions
