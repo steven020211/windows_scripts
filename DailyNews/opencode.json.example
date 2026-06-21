@@ -1,0 +1,8 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "env": {
+    "GITHUB_TOKEN": "你的 GitHub Personal Access Token",
+    "DISCORD_WEBHOOK_URL": "你的 Discord Webhook URL",
+    "OPENROUTER_API_KEY": "你的 OpenRouter API Key"
+  }
+}
